@@ -1,6 +1,5 @@
 ---
 
-home: "true"
 heroImage: "/images/ecubelogo/ecubelogo.png"
 heroImageDark: "/images/ecubelogo/ecubelogo.png"
 Alt: "ECube"
