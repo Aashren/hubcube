@@ -1,0 +1,3 @@
+import comp from "C:/Users/Admin/Desktop/vuepress-starter/docs/.vuepress/.temp/pages/safety.html.vue"
+const data = JSON.parse("{\"path\":\"/safety.html\",\"title\":\"About Safety\",\"lang\":\"en-US\",\"frontmatter\":{\"prev\":{\"text\":\"Assembly\",\"link\":\"/third.md\"}},\"headers\":[{\"level\":2,\"title\":\"Warning\",\"slug\":\"warning\",\"link\":\"#warning\",\"children\":[]},{\"level\":2,\"title\":\"Danger\",\"slug\":\"danger\",\"link\":\"#danger\",\"children\":[]},{\"level\":2,\"title\":\"Caution\",\"slug\":\"caution\",\"link\":\"#caution\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"safety.md\"}")
+export { comp, data }

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as n}from"./app-DLaJUukL.js";const a={};function c(r,o){return t(),n("div")}const _=e(a,[["render",c],["__file","index.html.vue"]]),i=JSON.parse('{"path":"/nested/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"nested/README.md"}');export{_ as comp,i as data};

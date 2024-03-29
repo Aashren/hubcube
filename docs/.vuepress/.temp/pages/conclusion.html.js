@@ -1,0 +1,3 @@
+import comp from "C:/Users/Admin/Desktop/vuepress-starter/docs/.vuepress/.temp/pages/conclusion.html.vue"
+const data = JSON.parse("{\"path\":\"/conclusion.html\",\"title\":\"Conclusion and Recommendations\",\"lang\":\"en-US\",\"frontmatter\":{\"next\":{\"text\":\"Components\",\"link\":\"/second.md\"},\"prev\":{\"text\":\"ECube\",\"link\":\"/ECube.md\"}},\"headers\":[{\"level\":2,\"title\":\"4.1 Conclusion\",\"slug\":\"_4-1-conclusion\",\"link\":\"#_4-1-conclusion\",\"children\":[]},{\"level\":2,\"title\":\"4.2 Recommendations\",\"slug\":\"_4-2-recommendations\",\"link\":\"#_4-2-recommendations\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"conclusion.md\"}")
+export { comp, data }

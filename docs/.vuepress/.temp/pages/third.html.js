@@ -1,0 +1,3 @@
+import comp from "C:/Users/Admin/Desktop/vuepress-starter/docs/.vuepress/.temp/pages/third.html.vue"
+const data = JSON.parse("{\"path\":\"/third.html\",\"title\":\"Assembly\",\"lang\":\"en-US\",\"frontmatter\":{\"next\":{\"text\":\"About Safety\",\"link\":\"/safety.md\"},\"prev\":{\"text\":\"Components\",\"link\":\"/second.md\"},\"hostname\":\"Assembly\"},\"headers\":[{\"level\":2,\"title\":\"Task 1\",\"slug\":\"task-1\",\"link\":\"#task-1\",\"children\":[]},{\"level\":2,\"title\":\"Task 2\",\"slug\":\"task-2\",\"link\":\"#task-2\",\"children\":[]},{\"level\":2,\"title\":\"Task 3\",\"slug\":\"task-3\",\"link\":\"#task-3\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"third.md\"}")
+export { comp, data }
