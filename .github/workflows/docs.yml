@@ -3,13 +3,18 @@ name: docs
 on:
   # trigger deployment on every push to main branch
   push:
-    branches: [main]
+    branches:
+        - main
   # trigger deployment manually
   workflow_dispatch:
 
 jobs:
   docs:
     runs-on: ubuntu-latest
+
+    env:
+      DOCS_GA_ID: G-CTB8FQ7VMW
+      NODE_VERSION: '20'
 
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +38,9 @@ jobs:
           # cache deps for pnpm
           cache: pnpm
 
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       # run build script
       - name: Build VuePress site
         run: pnpm docs:build
@@ -43,7 +51,8 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           # deploy to gh-pages branch
-          target_branch: gh-pages
+          repo: vuepress/vuepress.github.io
+          target_branch: main
           # deploy the default output dir of VuePress
           build_dir: docs/.vuepress/dist
         env:
