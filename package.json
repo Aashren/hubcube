@@ -1,8 +1,7 @@
 {
     "scripts": {
-      "docs:dev": "vuepress dev docs --clean-cache --clean-temp",
-      "docs:build": "vuepress build docs --clean-cache --clean-temp",
-
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs"
     },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.8",
