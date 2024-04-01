@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
+  base: '/'  // set site base to default value
   title:'User guide',
   head: [
     [
@@ -30,6 +31,8 @@ export default defineUserConfig({
         lang: 'zh-CN',
         title: 'ECube', // Change the title here
         description: 'Vue 驱动的静态网站生成器',
+
+        editLinkText: 'Edit this page on GitHub',
       },
     },
     navbar: [
@@ -102,6 +105,24 @@ export default defineUserConfig({
     ],
   }   
   ),
+   markdown: {
+    importCode: {
+      handleImportPath: (importPath) => {
+        // handle @vuepress packages import path
+        if (importPath.startsWith('@vuepress/')) {
+          const packageName = importPath.match(/^(@vuepress\/[^/]*)/)![1]
+          return importPath
+            .replace(
+              packageName,
+              path.dirname(require.resolve(`${packageName}/package.json`)),
+            )
+            .replace('/src/', '/lib/')
+            .replace(/hotKey\.ts$/, 'hotKey.d.ts')
+        }
+        return importPath
+      },
+    },
+  },
 
   locales: {
     '/': {
