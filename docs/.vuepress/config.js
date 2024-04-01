@@ -3,7 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
-  base: '/'  // set site base to default value
+  base: '/',  // set site base to default value
   title:'User guide',
   head: [
     [
