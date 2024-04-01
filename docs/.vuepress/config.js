@@ -105,25 +105,6 @@ export default defineUserConfig({
     ],
   }   
   ),
-   markdown: {
-    importCode: {
-      handleImportPath: (importPath) => {
-        // handle @vuepress packages import path
-        if (importPath.startsWith('@vuepress/')) {
-          const packageName = importPath.match(/^(@vuepress\/[^/]*)/)![1]
-          return importPath
-            .replace(
-              packageName,
-              path.dirname(require.resolve(`${packageName}/package.json`)),
-            )
-            .replace('/src/', '/lib/')
-            .replace(/hotKey\.ts$/, 'hotKey.d.ts')
-        }
-        return importPath
-      },
-    },
-  },
-
   locales: {
     '/': {
       lang: 'en-US',
